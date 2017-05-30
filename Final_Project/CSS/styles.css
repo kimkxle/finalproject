@@ -1,0 +1,221 @@
+
+/* ----------------------
+clear fix hack
+------------------------*/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ----------------------
+Body
+------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: url(../images/sports-wallpaper.jpeg) no-repeat center center fixed;
+  background-size: cover; 
+}
+
+/* ----------------------
+Header
+------------------------*/
+
+header {
+  background-color: #00FFFF;
+  padding-bottom: 20px;
+}
+
+a {
+      color: #ffff00;
+      font-size: 20px;
+    }
+
+h1 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #00FFFF;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #ffff00;
+  margin: 10px 0 90px;
+  font-weight: 600;
+}
+
+header {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #222;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0 100px;
+  line-height: 1.5;
+}
+
+/* ----------------------
+nav
+------------------------*/
+/*nav li {
+  display: inline-block;
+  padding: 3px 60px;
+  background-color: white;
+}
+
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  
+  display: inline-block;
+  border-bottom: none;
+  text-transform: uppercase;
+  background: black;
+  background-color: b
+}*/
+
+/* ----------------------
+Circle Image
+------------------------*/
+#container {
+  height: 350px;
+  width: 350px;
+  background: url(../images/Screenshot1.jpg) no-repeat top center;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* ----------------------
+form
+------------------------*/
+form {
+  padding: 85px 0 85px;
+}
+
+input {
+  width: 30%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  float: center;
+  border-radius: 4px;
+  background: black;
+  color: white;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----------------------
+main page
+------------------------*/
+.goal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}
+
+
+/* ----------------------
+about page
+------------------------*/
+#about {
+  font-size: 24px;
+  text-align: center;
+  color: #ffff00;
+  margin: 10px 0 90px;
+  font-weight: 600;
+}
+
+.back {
+  text-align: center;
+  color: white;
+  display: block;
+  margin-bottom: 68px;
+}
+
+/* ----------------------
+footer 
+------------------------*/
+aside {
+  background: #00FFFF;
+  padding: 8px;
+  text-align: center
+  margin: 120px 0 90px;
+}
+
+.button {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit {
+  background: #033048;
+  color: #fff;
+  font-size: 24px;
+}
+
+footer {
+  background: #121212;
+  padding: 85px 0 45px;
+  text-align: center;
+}
+
+footer .logo {
+  color: #00FFFF;
+  margin-bottom: 68px;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 68px;
+}
+
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  border-top: 2px solid #44545E;
+  padding: 45px 0 3px;
+}

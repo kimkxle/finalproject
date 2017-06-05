@@ -5,12 +5,15 @@ clear fix hack
 
 /* Box Model Hack */
 * {
+  font-family: 'Raleway', sans-serif;
   -moz-box-sizing: border-box; /* Firexfox */
   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
 }
 
 /* Clear fix hack */
+
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -23,6 +26,9 @@ clear fix hack
 .clear {
   clear: both;
 }
+*/
+
+
 
 /* ----------------------
 Body
@@ -35,28 +41,64 @@ html {
   box-sizing: inherit;
 }
 
+
 body {
   color: #000;
   font-size: 12px;
   line-height: 1.4;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
   background: url(../images/sports-wallpaper.jpeg) no-repeat center center fixed;
   background-size: cover; 
 }
+
 
 /* ----------------------
 Header
 ------------------------*/
 
 header {
-  background-color: #00FFFF;
   padding-bottom: 20px;
+    text-align: center;
 }
 
-a {
-      color: #ffff00;
-      font-size: 20px;
-    }
+/* ----------------------
+nav
+------------------------*/
+
+
+.nav ul {
+  width: 100%;
+  float: left;
+  margin: 0 0 3em 0;
+  padding: 0;
+  list-style: none;
+  background-color: black;
+  border-bottom: 1px solid; 
+  border-top: 1px solid;
+  text-align: center;
+}
+
+.nav li {
+  float: center; 
+  display: inline;
+}
+
+.nav li a{
+  display: inline-block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-left: 1px solid #ccc; 
+  border-right: 1px solid #ccc;
+}
+
+.nav li a:hover {
+  color: #00FFFF;
+  background-color: gray; 
+}
+
+
 
 h1 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -71,37 +113,6 @@ h2 {
   margin: 10px 0 90px;
   font-weight: 600;
 }
-
-header {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  color: #222;
-  text-transform: none;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 0 100px;
-  line-height: 1.5;
-}
-
-/* ----------------------
-nav
-------------------------*/
-/*nav li {
-  display: inline-block;
-  padding: 3px 60px;
-  background-color: white;
-}
-
-nav a {
-  font-weight: 600;
-  letter-spacing: 0.75px;
-  
-  display: inline-block;
-  border-bottom: none;
-  text-transform: uppercase;
-  background: black;
-  background-color: b
-}*/
 
 /* ----------------------
 Circle Image
@@ -123,50 +134,117 @@ Circle Image
 /* ----------------------
 form
 ------------------------*/
-form {
-  padding: 85px 0 85px;
+.contact-details {
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 12px;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+
 }
 
 input {
-  width: 30%;
+  width: 100%;
   padding: 10px 10px;
   box-sizing: border-box;
-  float: center;
   border-radius: 4px;
   background: black;
   color: white;
-  display: block;
-  margin: 0 auto;
 }
+
+
 
 /* ----------------------
 main page
 ------------------------*/
-.goal {
-  display: flex;
+fieldset {
+  padding: 12px;
+  flex-wrap: auto;
+  text-align: left;
+  float: center;
+  display: inline-block;
+  background: gray;
+  color: white;
+  width: 30%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  color: yellow;
+  font-size: 24px;
+}
+
+input {
+  border-radius: 4px;
+  background: black;
+  color: white;
+  display: block;
+  resize: horizontal;
+}
+
+#clear{
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin: 5% 37%;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex; 
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 960px) {
+  fieldset {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  fieldset {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  fieldset {
+    width: 100%;
+  }
 }
 
 
 /* ----------------------
 about page
 ------------------------*/
-#about {
+#About-Section {
+  border-radius: 50%
+  padding: 12px 12px;
+  width: 50%;
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+  color: white;
   font-size: 24px;
   text-align: center;
-  color: #ffff00;
-  margin: 10px 0 90px;
-  font-weight: 600;
+  border: 1px solid white; 
+  background: black;
+
 }
 
-.back {
-  text-align: center;
-  color: white;
-  display: block;
-  margin-bottom: 68px;
-}
 
 /* ----------------------
 footer 

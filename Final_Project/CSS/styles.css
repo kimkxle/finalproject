@@ -228,7 +228,7 @@ input {
 
 
 /* ----------------------
-about page
+About page
 ------------------------*/
 #About-Section {
   border-radius: 50%
@@ -242,7 +242,11 @@ about page
   text-align: center;
   border: 1px solid white; 
   background: black;
+}
 
+p {
+  text-align: center;
+  padding: 20px 30px;
 }
 
 
